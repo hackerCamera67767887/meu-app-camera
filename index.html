@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu App Camera - Sem Anuncios</title>
+    <style>
+        body { background: #1a1a1a; color: white; text-align: center; font-family: sans-serif; }
+        .video-container { width: 90%; max-width: 800px; margin: auto; border: 2px solid #333; }
+        .status { color: #00ff00; margin: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Câmera V360 (Privado)</h1>
+    <div class="status">● Conectado ao ID: CFEO-945311-LDUZR</div>
+    <div class="video-container">
+        <p>Para ver o vídeo sem anúncios:</p>
+        <button onclick="copiarLink()">Copiar Link do Vídeo</button>
+        <p style="font-size: 0.8em; color: #888;">Cole este link no app VLC Player</p>
+    </div>
+
+    <script>
+        function copiarLink() {
+            const link = "rtsp://admin:SENHA_AQUI@192.168.100.100:554/live/ch0";
+            alert("Link copiado! Abra o VLC e cole em 'Fluxo de Rede'.");
+        }
+    </script>
+</body>
+</html>
